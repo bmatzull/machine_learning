@@ -121,7 +121,7 @@ if __name__ == '__main__':
 
     tree = ID3Tree()
     tree.train(X_train, y_train)
-    tree.print()
+    #tree.print()
 
     preds = tree.predict(X_test)
     accuracy = np.mean(preds == y_test)
